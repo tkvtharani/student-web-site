@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>STUDENT DETAILS</h2>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="contact">Contact number:</label>
+            <input type="tel" id="contact" required>
+
+            <button type="button" id="saveButton">SAVE</button>
+            <button type="button" id="updateButton" style="display: none;">UPDATE</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>COURSE</th>
+                    <th>GENDER</th>
+                    <th>EMAIL</th>
+                    <th>CONTACT NUMBER</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Data will be inserted dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
